@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
+.env
 
 # Ignorar todos los archivos .env en cualquier carpeta y variantes
 .env

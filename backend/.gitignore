@@ -28,3 +28,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+=======
+# Ignorar archivos de entorno y logs
+.env
+logs
+*.log
+node_modules/
+dist/
