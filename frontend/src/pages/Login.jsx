@@ -15,7 +15,7 @@ const Login = () => {
   const onSubmitHandler = async (event)=>{
     event.preventDefault();
     try {
-      if (currentState === 'Sing Up') {
+      if (currentState === 'Sign Up') {
         
         const response = await axios.post(backendUrl +  'api/user/register', {name,email,password})
         if(response.data.success){
@@ -63,7 +63,7 @@ const Login = () => {
             : <p onClick={()=>setCurrentState('Login')} className='cursor-pointer'>Logeate Aqui</p>
           }
         </div>
-        <button className='bg-black text-white font-light px-8 py-2 mt-4 cursor-pointer'>{currentState === 'Login' ? 'Sign In' : 'Sing Up'}</button>
+        <button className='bg-black text-white font-light px-8 py-2 mt-4 cursor-pointer'>{currentState === 'Login' ? 'Sign In' : 'Sign Up'}</button>
     </form>
   )
 }
